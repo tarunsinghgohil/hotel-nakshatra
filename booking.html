@@ -7,7 +7,7 @@
     <meta name="keywords" content="Hotel Nakshatra, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hotel Nakshatra | Contact Us</title>
+    <title>Hotel Nakshatra | Booking</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
@@ -59,7 +59,7 @@
         </div>
         <nav class="mainmenu mobile-menu">
             <ul>
-                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./rooms.html">Rooms</a></li>
                 <!-- <li><a href="./about-us.html">About Us</a></li> -->
                 <!-- <li><a href="./pages.html">Pages</a>
@@ -72,7 +72,7 @@
                 </li> -->
                 <!--  <li><a href="./blog.html">News</a></li> -->
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./booking.html">Booking App</a></li>
+                <li class="active"><a href="./booking.html">Booking App</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -156,8 +156,8 @@
                                         </ul>
                                     </li> -->
                                     <!-- <li><a href="./blog.html">News</a></li> -->
-                                    <li class="active"><a href="./contact.html">Contact</a></li>
-                                    <li><a href="./booking.html">Booking App</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li class="active"><a href="./booking.html">Booking App</a></li>
                                 </ul>
                             </nav>
                             <div class="nav-right search-switch">
@@ -172,60 +172,84 @@
     <!-- Header End -->
 
     <!-- Contact Section Begin -->
+    <style>
+        .icon-box {
+            border-radius: 10px;
+            border: 1px solid;
+            place-items: center;
+            padding: 20px 12px;
+        }
+
+        .img-box {
+            height: 112px;
+            align-content: center;
+            width: 130px;
+        }
+
+        @media (max-width:991px) {
+            .icon-section {
+                display: grid !important;
+                gap: 30px;
+                place-items: center !important;
+            }
+
+            section.contact-section.spad .container {
+                /* justify-items: left; */
+            }
+        }
+    </style>
     <section class="contact-section spad">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="contact-text">
-                        <h2>Contact Info</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td class="c-o">Address:</td>
-                                    <td>Ranthambhor Rd, near Hill view marriage garden, Subhash Nagar, Saptar, Sawai
-                                        Madhopur, Rajasthan 322001</td>
-                                </tr>
-                                <tr>
-                                    <td class="c-o">Phone:</td>
-                                    <td><a href="tel:+9108000929315">+91 8000929315</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="c-o">Email:</td>
-                                    <td><a href="mailto:hotelnakshatra15@gmail.com">hotelnakshatra15@gmail.com</a></td>
-                                </tr>
-                                <!-- <tr>
-                                    <td class="c-o">Fax:</td>
-                                    <td>+(12) 345 67890</td>
-                                </tr> -->
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <!-- <div class="col-lg-7 offset-lg-1">
-                    <form action="#" class="contact-form">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <input type="text" placeholder="Your Name">
-                            </div>
-                            <div class="col-lg-6">
-                                <input type="text" placeholder="Your Email">
-                            </div>
-                            <div class="col-lg-12">
-                                <textarea placeholder="Your Message"></textarea>
-                                <button type="submit">Submit Now</button>
-                            </div>
+            <section class="icon-section d-flex" style="justify-content: space-around;place-items: end;">
+                <a href="https://www.agoda.com/en-gb/account/signin.html" target="_blank">
+                    <div class="icon-box">
+                        <div class="img-box">
+                            <img src="img/icon/agoda.png" alt="agoda">
                         </div>
-                    </form>
-                </div> -->
-            </div>
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7171.063972440207!2d76.36043470306461!3d26.016151567540017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396e277e5fb11299%3A0x366009615a90d3ad!2sHotel%20nakshatra!5e0!3m2!1sen!2sin!4v1762611420858!5m2!1sen!2sin"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+                        <h3>Agoda</h3>
+                    </div>
+                </a>
+                <a href="https://account.booking.com/sign-in" target="_blank">
+                    <div class="icon-box">
+                        <div class="img-box">
+                            <img src="img/icon/booking.com.png" alt="booking.com">
+                        </div>
+                        <h3>Booking.com</h3>
+                    </div>
+                </a>
+                <a href="https://www.cleartrip.com/hotels" target="_blank">
+                    <div class="icon-box">
+                        <div class="img-box">
+                            <img src="img/icon/cleartrip.png" alt="cleartrip">
+                        </div>
+                        <h3>Cleartrip</h3>
+                    </div>
+                </a>
+                <a href="https://www.goibibo.com/hotels/" target="_blank">
+                    <div class="icon-box">
+                        <div class="img-box">
+                            <img src="img/icon/goibibo.png" alt="goibibo">
+                        </div>
+                        <h3>Goibibo</h3>
+                    </div>
+                </a>
+                <a href="https://www.makemytrip.com/hotels/" target="_blank">
+                    <div class="icon-box">
+                        <div class="img-box">
+                            <img src="img/icon/makemytrip.png" alt="makemytrip">
+                        </div>
+                        <h3>Makemytrip</h3>
+                    </div>
+                </a>
+                <a href="https://secure.yatra.com/social/common/yatra/signin.htm" target="_blank">
+                    <div class="icon-box">
+                        <div class="img-box">
+                            <img src="img/icon/yatra.png" alt="yatra">
+                        </div>
+                        <h3>Yatra</h3>
+                    </div>
+                </a>
+            </section>
         </div>
     </section>
     <!-- Contact Section End -->
